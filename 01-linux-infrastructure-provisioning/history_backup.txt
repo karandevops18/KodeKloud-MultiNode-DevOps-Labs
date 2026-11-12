@@ -1,0 +1,66 @@
+    1  cat ~/.ssh/id_ed25519.pub
+    2  ssh -T git@github.com
+    3  mkdir -p /KodeKloud-MultiNode-DevOps-Labs
+    4  mkdir -p KodeKloud-MultiNode-DevOps-Labs
+    5  ls
+    6  cd KodeKloud-MultiNode-DevOps-Labs/
+    7  mkdir -p Linux
+    8  cat <<EOF > practice.md
+# DevOps Hands-on Labs
+
+My practical learning journey covering DevOps, Cloud,
+Linux, Infrastructure Engineering and Security.
+
+## Topics
+
+- Linux Administration
+- Git and GitHub
+- Docker
+- Kubernetes
+- Terraform
+- AWS
+- Azure
+- GCP
+- Networking
+- Security
+- Troubleshooting
+
+Each lab contains objectives, implementation steps,
+commands, validation, troubleshooting and outcomes.
+EOF
+
+    9  ls
+   10  git add .
+   11  git init
+   12  git status
+   13  git add .
+   14  git commit - "initial commit"
+   15  git commit -m  "initial commit"
+   16  git remote add origin git@github.com:karandevops18/KodeKloud-MultiNode-DevOps-Labs.git
+   17  git branch -m Main
+   18  git push -u origin Main
+   19  git remote add origin https://github.com/karandevops18/KodeKloud-MultiNode-DevOps-Labs.git
+   20  git remote add origin git@github.com:karandevops18/KodeKloud-MultiNode-DevOps-Labs.git
+   21  git branch -m Main
+   22  git push -u origin Main
+   23  ls
+   24  mv Linux/ 01-linux-infrastructure-provisioning/
+   25  ls
+   26  cd 01-linux-infrastructure-provisioning/
+   27  touch README.md infrastructure-discovery.md troubleshooting.md
+   28  ls
+   29  mkdir screenshots
+   30  ls
+   31  cat /etc/os-release
+   32  git status
+   33  hostnamectl
+   34  hostname -I
+   35  ip addr show
+   36  ip route
+   37  nproc
+   38  free -h
+   39  df -h
+   40  lsblk
+   41  ping -c 3 8.8.8.8
+   42  history
+   43  history > history_backup.txt
